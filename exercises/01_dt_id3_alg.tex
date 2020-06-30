@@ -55,13 +55,72 @@ Erstellen Sie den Entscheidungsbaum mittels des ID3 Algorithmus.
 Berechnen Sie dabei die \textbf{Entropie} und den \textbf{Informationsgewinn} (engl. \textit{gain}) der Attribut-Selektion für jeden Schritt.
 
 \begin{solution}
-% Geben sie hier ihre Antwort an.
+Wir filtern im ersten Schritt nach Attributen und Schätzen $p_+$ und $p_-$ für jede Ausprägung des Attributs durch Zählen. Es ergibt sich
+\begin{table}[h!]
+	\centering
+	\caption{Attribut: Ausblick}
+	\begin{tabular}{l|c|c|c|l}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Sonnig    & 5 &2&3&0.971   \\
+		Bewölkt & 4&4&0&0  \\
+		Regen    & 5&3&2&0.971    \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\caption{Attribut: Temperatur}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Warm  & 4 &2&2&1      \\
+		Mild & 6&4&2&0.918   \\
+		Kühl & 4&3&1&0.811    \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\caption{Attribut: Luftfeuchtigkeit}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Hoch  & 7 &3&4&0.985      \\
+		Normal & 7&6&1&0.591   \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\caption{Attribut: Wind}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Stark  & 6 &3&3&1      \\
+		Schwach &8&6&2&0.811   \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\newline
+Pro Ausprägung setzen wir nun
+\begin{align*}
+p_+=\frac{\text{davon +}}{\text{Anzahl}}\;\;\; \text{und}\;\;\; p_-=\frac{\text{davon -}}{\text{Anzahl}}
+\end{align*}
+und berechnen die Entropien mittels $I(p_+,p_-)=(-p_+\cdot\log p_+)+(-p_-\cdot\log p_-)$. Die Ergebnisse haben wir an die Tabelle angefügt. Letztlich finden wir Für jedes Attribut Att. den Informationsgehalt mittels \begin{align*}
+\text{Information}(\text{Att.})=\sum_{\text{Ausprägung A von Att.}}\frac{\text{Anzahl(A)}}{14}\cdot\text{Entropy(A)}
+\end{align*}
+Es ergibt sich
 \end{solution}
 
 \end{subtask}
 
 \begin{subtask}[points=3,title=Visualisierung]
-Erstellen Sie eine Visualsierung (Plot oder eingefügte Zeichnung) des Entscheidungsbaumes aus Aufgabenteil~\ref{q:id3_alg}.
+Erstellen Sie eine Visualisierung (Plot oder eingefügte Zeichnung) des Entscheidungsbaumes aus Aufgabenteil~\ref{q:id3_alg}.
 
 \begin{solution}
 % Geben sie hier ihre Antwort an.
