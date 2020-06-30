@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  30 JUN 2020 14:08
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  30 JUN 2020 15:57
  restricted system commands enabled.
 **exercise.tex
 (./exercise.tex
@@ -1852,10 +1852,18 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 (C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/bbding/bbding.sty
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
 )
+(C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count331
+\float@exts=\toks41
+\float@box=\box70
+\@float@everytoks=\toks42
+\@floatcapt=\box71
+)
 (C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/algorithm2e/algorithm2e.st
 y
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count331
+\c@AlgoLine=\count332
  ("C:/Program Files/MiKTeX 2.9/tex/latex/base/ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -1863,7 +1871,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 
 (C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count332
+\c@checkoddpage=\count333
 )
 ("C:/Program Files/MiKTeX 2.9/tex/latex/tools/xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -1886,33 +1894,33 @@ Package: relsize 2013/03/29 ver 4.1
 \interspacealgoruled=\dimen312
 \interspacetitleboxruled=\dimen313
 \algocf@ruledwidth=\skip84
-\algocf@inoutbox=\box70
-\algocf@inputbox=\box71
+\algocf@inoutbox=\box72
+\algocf@inputbox=\box73
 \AlCapSkip=\skip85
 \AlCapHSkip=\skip86
 \algoskipindent=\skip87
-\algocf@nlbox=\box72
-\algocf@hangingbox=\box73
-\algocf@untilbox=\box74
+\algocf@nlbox=\box74
+\algocf@hangingbox=\box75
+\algocf@untilbox=\box76
 \algocf@skipuntil=\skip88
-\algocf@capbox=\box75
+\algocf@capbox=\box77
 \algocf@lcaptionbox=\skip89
 \algoheightruledefault=\skip90
 \algoheightrule=\skip91
 \algotitleheightruledefault=\skip92
 \algotitleheightrule=\skip93
-\c@algocfline=\count333
-\c@algocfproc=\count334
-\c@algocf=\count335
-\algocf@algoframe=\box76
-\algocf@algobox=\box77
+\c@algocfline=\count334
+\c@algocfproc=\count335
+\c@algocf=\count336
+\algocf@algoframe=\box78
+\algocf@algobox=\box79
 )
 (C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen314
 \WF@size=\dimen315
-\c@WF@wrappedlines=\count336
-\WF@box=\box78
-\WF@everypar=\toks41
+\c@WF@wrappedlines=\count337
+\WF@box=\box80
+\WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 )
 (C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/units/nicefrac.sty
@@ -1923,29 +1931,27 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 )
 ("C:/Program Files/MiKTeX 2.9/tex/latex/tools/multicol.sty"
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count337
-\mult@box=\box79
+\c@tracingmulticols=\count338
+\mult@box=\box81
 \multicol@leftmargin=\dimen316
-\c@unbalance=\count338
-\c@collectmore=\count339
-\doublecol@number=\count340
-\multicoltolerance=\count341
-\multicolpretolerance=\count342
+\c@unbalance=\count339
+\c@collectmore=\count340
+\doublecol@number=\count341
+\multicoltolerance=\count342
+\multicolpretolerance=\count343
 \full@width=\dimen317
 \page@free=\dimen318
 \premulticols=\dimen319
 \postmulticols=\dimen320
 \multicolsep=\skip97
 \multicolbaselineskip=\skip98
-\partial@page=\box80
-\last@line=\box81
+\partial@page=\box82
+\last@line=\box83
 \maxbalancingoverflow=\dimen321
-\mult@rightbox=\box82
-\mult@grightbox=\box83
-\mult@gfirstbox=\box84
-\mult@firstbox=\box85
-\@tempa=\box86
-\@tempa=\box87
+\mult@rightbox=\box84
+\mult@grightbox=\box85
+\mult@gfirstbox=\box86
+\mult@firstbox=\box87
 \@tempa=\box88
 \@tempa=\box89
 \@tempa=\box90
@@ -1981,20 +1987,22 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box120
 \@tempa=\box121
 \@tempa=\box122
-\c@minrows=\count343
-\c@columnbadness=\count344
-\c@finalcolumnbadness=\count345
+\@tempa=\box123
+\@tempa=\box124
+\c@minrows=\count344
+\c@columnbadness=\count345
+\c@finalcolumnbadness=\count346
 \last@try=\dimen322
 \multicolovershoot=\dimen323
 \multicolundershoot=\dimen324
-\mult@nat@firstbox=\box123
-\colbreak@box=\box124
-\mc@col@check@num=\count346
+\mult@nat@firstbox=\box125
+\colbreak@box=\box126
+\mc@col@check@num=\count347
 )
 (C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip99
-\multirow@cntb=\count347
+\multirow@cntb=\count348
 \multirow@dima=\skip100
 \bigstrutjot=\dimen325
 )
@@ -2004,45 +2012,45 @@ Package csquotes Info: ... found 'babel' package.
 (./exercise.aux)
 \openout1 = exercise.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 11
-2.
+3.
  ("C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
 
 ("C:/Program Files/MiKTeX 2.9/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
+\scratchcounter=\count349
 \scratchdimen=\dimen326
-\scratchbox=\box125
-\nofMPsegments=\count349
-\nofMParguments=\count350
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count351
+\scratchbox=\box127
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count352
 \MPscratchDim=\dimen327
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
-\everyMPtoPDFconversion=\toks43
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks45
 ) ("C:/Program Files/MiKTeX 2.9/tex/latex/epstopdf-pkg/epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
@@ -2054,60 +2062,60 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 112.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 112.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 112.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 112.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 112.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 112.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 112.
-LaTeX Font Info:    Redeclaring math accent \check on input line 112.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 112.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 112.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 112.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 112.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 113.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 113.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 113.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 113.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 113.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 113.
+LaTeX Font Info:    Redeclaring math accent \check on input line 113.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 113.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 113.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 113.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 112.
+(Font)              `operators' in the math version `normal' on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/XCharter(0)/m/n on input line 112.
+(Font)                  OT1/cmr/m/n --> TU/XCharter(0)/m/n on input line 113.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 112.
+(Font)              `operators' in the math version `bold' on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/m/n on input line 112.
+(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/m/n on input line 
-112.
+113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/XCharter(0)/m/it on input line 112.
+(Font)                  OT1/cmr/m/it --> TU/XCharter(0)/m/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/b/n on input line 112.
+(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Roboto(0)/m/n on input line 112.
+(Font)                  OT1/cmss/m/n --> TU/Roboto(0)/m/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/m/n on input line 112.
+(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/m/n on input line 113.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/b/n on input line 
-112.
+113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/XCharter(0)/b/it on input line 112.
+(Font)                  OT1/cmr/bx/it --> TU/XCharter(0)/b/it on input line 113.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Roboto(0)/b/n on input line 112.
+(Font)                  OT1/cmss/bx/n --> TU/Roboto(0)/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/b/n on input line 112.
+(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/b/n on input line 113.
 
 
 *geometry* driver: auto-detecting
@@ -2144,8 +2152,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box126
-Package hyperref Info: Link coloring OFF on input line 112.
+\AtBeginShipoutBox=\box128
+Package hyperref Info: Link coloring OFF on input line 113.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -2156,11 +2164,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count354
+\c@section@level=\count355
 )
-LaTeX Info: Redefining \ref on input line 112.
-LaTeX Info: Redefining \pageref on input line 112.
-LaTeX Info: Redefining \nameref on input line 112.
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
  (./exercise.out) (./exercise.out)
 \@outlinefile=\write5
 
@@ -2172,7 +2180,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 112.
+(scrartcl)           before \begin{document} on input line 113.
 
 (C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -2182,36 +2190,36 @@ File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input line
  168.
-\BKM@id=\count355
+\BKM@id=\count356
 ))
-Package scrbase Info: activating ngerman \sheetname on input line 112.
-Package scrbase Info: activating ngerman \taskname on input line 112.
-Package scrbase Info: activating ngerman \solutionname on input line 112.
-Package scrbase Info: activating ngerman \StudentNamename on input line 112.
-Package scrbase Info: activating ngerman \StudentIDname on input line 112.
-Package scrbase Info: activating ngerman \PointName on input line 112.
-Package scrbase Info: activating ngerman \PointsName on input line 112.
-\c@lstlisting=\count356
+Package scrbase Info: activating ngerman \sheetname on input line 113.
+Package scrbase Info: activating ngerman \taskname on input line 113.
+Package scrbase Info: activating ngerman \solutionname on input line 113.
+Package scrbase Info: activating ngerman \StudentNamename on input line 113.
+Package scrbase Info: activating ngerman \StudentIDname on input line 113.
+Package scrbase Info: activating ngerman \PointName on input line 113.
+Package scrbase Info: activating ngerman \PointsName on input line 113.
+\c@lstlisting=\count357
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 123.
+(Font)              scaled to size 10.0pt on input line 124.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 123.
+(Font)              scaled to size 10.0pt on input line 124.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 123.
+(Font)              scaled to size 20.74pt on input line 124.
 <tuda_logo.pdf, id=6, 156.48964pt x 62.59586pt>
 File: tuda_logo.pdf Graphic file (type pdf)
 <use tuda_logo.pdf>
-Package luatex.def Info: tuda_logo.pdf  used on input line 123.
+Package luatex.def Info: tuda_logo.pdf  used on input line 124.
 (luatex.def)             Requested size: 156.49402pt x 62.59605pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 123.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 124.
 
 
 ("C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 123.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 124.
 
 
 ("C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd"
@@ -2229,67 +2237,94 @@ LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
 
 {C:/Users/No-Pa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}<./tuda_logo.p
 df>]) [2]
-(./exercises/01_dt_id3_alg.tex
+(./exercises/01_dt_id3_alg.tex [3
+warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
 
+warning  (pdf backend): ignoring duplicate destination with the name 'table.3'
+] [4
+warning  (pdf backend): ignoring duplicate destination with the name 'table.4'
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+warning  (pdf backend): ignoring duplicate destination with the name 'table.5'
 
+warning  (pdf backend): ignoring duplicate destination with the name 'table.6'
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+warning  (pdf backend): ignoring duplicate destination with the name 'table.7'
+] [5
+warning  (pdf backend): ignoring duplicate destination with the name 'table.8'
 
-[3]) [4] (./exercises/02_dt_classification.tex
+warning  (pdf backend): ignoring duplicate destination with the name 'table.9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.12'
+]) [6
+warning  (pdf backend): ignoring duplicate destination with the name 'table.13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.16'
+] (./exercises/02_dt_classification.tex
 LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 3.
-<media/images/example.png, id=63, 412.54124pt x 211.79124pt>
+<media/images/example.png, id=81, 412.54124pt x 211.79124pt>
 File: media/images/example.png Graphic file (type png)
 <use media/images/example.png>
 Package luatex.def Info: media/images/example.png  used on input line 7.
 (luatex.def)             Requested size: 230.46576pt x 118.3179pt.
-<media/images/signal.pdf, id=64, 590.80725pt x 446.26724pt>
+<media/images/signal.pdf, id=82, 590.80725pt x 446.26724pt>
 File: media/images/signal.pdf Graphic file (type pdf)
 <use media/images/signal.pdf>
 Package luatex.def Info: media/images/signal.pdf  used on input line 10.
 (luatex.def)             Requested size: 230.46576pt x 174.08437pt.
- [5<./media/images/example.png><./media/images/signal.pdf>]) (./exercises/03_dt
-_regression.tex)
-(./exercises/04_random_forest.tex) [6] (./exercises/05_adaboost.tex) [7]
-(./exercises/06_naive_bayes.tex Excluding 'comment' comment.) [8]
+ [7
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
+<./media/images/example.png><./media/images/signal.pdf>])
+(./exercises/03_dt_regression.tex) (./exercises/04_random_forest.tex) [8]
+(./exercises/05_adaboost.tex) [9
+warning  (pdf backend): ignoring duplicate destination with the name 'table.17'
+] (./exercises/06_naive_bayes.tex Excluding 'comment' comment.) [10]
 (./exercises/07_kmeans.tex
-<media/images/kmeans.png, id=152, 582.175pt x 557.08125pt>
+<media/images/kmeans.png, id=170, 582.175pt x 557.08125pt>
 File: media/images/kmeans.png Graphic file (type png)
 <use media/images/kmeans.png>
 Package luatex.def Info: media/images/kmeans.png  used on input line 13.
 (luatex.def)             Requested size: 204.85672pt x 196.0269pt.
-) [9<./media/images/kmeans.png>]
-(./exercises/08_regression.tex
-<media/images/data.pdf, id=163, 462.528pt x 346.896pt>
+) [11
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
+<./media/images/kmeans.png>] (./exercises/08_regression.tex
+<media/images/data.pdf, id=182, 462.528pt x 346.896pt>
 File: media/images/data.pdf Graphic file (type pdf)
 <use media/images/data.pdf>
 Package luatex.def Info: media/images/data.pdf  used on input line 17.
 (luatex.def)             Requested size: 256.07481pt x 192.06375pt.
-) [10<./media/images/data.pdf>] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
-
-(./exercise.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+) [12
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
+<./media/images/data.pdf>] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
+ (./exercise.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
 Package rerunfilecheck Info: File `exercise.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35607 strings out of 480885
+ 35673 strings out of 480885
  100000,1373583 words of node,token memory allocated
  3058 words of node memory still in use:
    62 hlist, 6 vlist, 33 rule, 17 disc, 7 local_par, 4 dir, 40 glue, 32 kern, 7 
 penalty, 99 glyph, 69 attribute, 86 glue_spec, 45 attribute_list, 2 write, 4 pdf
 _colorstack nodes
-   avail lists: 1:2,2:2351,3:176,4:73,5:518,6:86,7:3981,8:66,9:816,10:21,11:342
- 51879 multiletter control sequences out of 65536+200000
+   avail lists: 1:2,2:2077,3:176,4:71,5:486,6:86,7:3757,8:66,9:728,10:22,11:342
+ 51926 multiletter control sequences out of 65536+200000
  139 fonts using 20256307 bytes
  79i,21n,124p,10129b,849s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/no-pa/appdata/roaming/miktex/2.9/fonts/opentype/public/xcharter/xc
@@ -2309,9 +2344,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb>
-Output written on exercise.pdf (11 pages, 1519760 bytes).
+Output written on exercise.pdf (13 pages, 1528321 bytes).
 
-PDF statistics: 367 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 131072)
+PDF statistics: 385 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 131072)
  216 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -56,7 +56,7 @@ Berechnen Sie dabei die \textbf{Entropie} und den \textbf{Informationsgewinn} (e
 
 \begin{solution}
 Wir filtern im ersten Schritt nach Attributen und Schätzen $p_+$ und $p_-$ für jede Ausprägung des Attributs durch Zählen. Es ergibt sich
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
 	\caption{Attribut: Ausblick}
 	\begin{tabular}{l|c|c|c|l}
@@ -69,7 +69,7 @@ Wir filtern im ersten Schritt nach Attributen und Schätzen $p_+$ und $p_-$ für
 		\bottomrule
 	\end{tabular}
 \end{table}
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
 	\caption{Attribut: Temperatur}
 	\begin{tabular}{l|c|c|c|c}
@@ -82,7 +82,7 @@ Wir filtern im ersten Schritt nach Attributen und Schätzen $p_+$ und $p_-$ für
 		\bottomrule
 	\end{tabular}
 \end{table}
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
 	\caption{Attribut: Luftfeuchtigkeit}
 	\begin{tabular}{l|c|c|c|c}
@@ -94,7 +94,7 @@ Wir filtern im ersten Schritt nach Attributen und Schätzen $p_+$ und $p_-$ für
 		\bottomrule
 	\end{tabular}
 \end{table}
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
 	\caption{Attribut: Wind}
 	\begin{tabular}{l|c|c|c|c}
@@ -106,15 +106,150 @@ Wir filtern im ersten Schritt nach Attributen und Schätzen $p_+$ und $p_-$ für
 		\bottomrule
 	\end{tabular}
 \end{table}
-\newline
 Pro Ausprägung setzen wir nun
 \begin{align*}
 p_+=\frac{\text{davon +}}{\text{Anzahl}}\;\;\; \text{und}\;\;\; p_-=\frac{\text{davon -}}{\text{Anzahl}}
 \end{align*}
-und berechnen die Entropien mittels $I(p_+,p_-)=(-p_+\cdot\log p_+)+(-p_-\cdot\log p_-)$. Die Ergebnisse haben wir an die Tabelle angefügt. Letztlich finden wir Für jedes Attribut Att. den Informationsgehalt mittels \begin{align*}
-\text{Information}(\text{Att.})=\sum_{\text{Ausprägung A von Att.}}\frac{\text{Anzahl(A)}}{14}\cdot\text{Entropy(A)}
+und berechnen die Entropien mittels $I(p_+,p_-)=(-p_+\cdot\log p_+)+(-p_-\cdot\log p_-)$. Wobei der Logarithmus zur Basis 2 benutzt wurde. Die Ergebnisse haben wir an die Tabelle angefügt. Letztlich finden wir für jedes Attribut Att. den Informationsgehalt mittels \begin{align*}
+\text{Information}(\text{Att.})=-\sum_{\text{Ausprägung A von Att.}}\frac{\text{Anzahl(A)}}{\text{ges}}\cdot\text{Entropy(A)}
 \end{align*}
-Es ergibt sich
+Es ergibt sich (ges=14),
+\begin{table}[H]
+	\centering
+	\caption{Informationsgehalt}
+	\begin{tabular}{l|c}
+		\toprule
+		\textbf{Attribut} & \textbf{Information}  \\
+		\midrule
+		Ausblick & -0.694\\
+		Temperatur & -0.911\\
+		Luftfeuchtigkeit & -0.788\\
+		Wind&-0.892\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+, sodass wir uns als erstes Kriterium für das Attribut Ausblick entscheiden. Bei Bewölkung sind bereits alle Tage in einer Kategorie (+), weshalb wir hier ein Blatt mit einem + erstellen. Betrachten wir nun also alle Tage an denen es Sonnig ist und erstellen hier rekursiv einen Teilbaum. Wir fassen nochmal alle Daten, welche wir in diesem Knoten gegeben haben zusammen:
+\begin{table}[H]
+	\centering
+	\caption{Trainingsdatensatz, nur Sonnig}
+	\begin{tabular}{l|c|c|c|c|c}
+		\toprule
+		\textbf{Tag} & \textbf{Ausblick (A)} & \textbf{Temperatur (T)}  & \textbf{Luftfeuchtigkeit (L)} & \textbf{Wind (W)}     & \textbf{Spielt Baseball (B)} \\
+		\midrule
+		T1  & Sonnig    & Warm        & Hoch             & Schwach  & Nein            \\
+		T2  & Sonnig    & Warm        & Hoch             & Stark    & Nein            \\
+		T8  & Sonnig    & Mild        & Hoch             & Schwach  & Nein            \\
+		T9  & Sonnig    & Kühl        & Normal           & Schwach  & Ja              \\
+		T11 & Sonnig    & Mild        & Normal           & Stark    & Ja              \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+Wir zählen, so wie oben und erhalten:
+\begin{table}[H]
+	\centering
+	\caption{nur Sonnig, Attribut: Temperatur}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Warm  & 2 &0&2&0      \\
+		Mild & 2&1&1&1   \\
+		Kühl & 1&1&0&0    \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[H]
+	\centering
+	\caption{nur Sonnig, Attribut: Luftfeuchtigkeit}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Hoch&3&0&3&0\\
+		Normal&2&2&0&0\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[H]
+	\centering
+	\caption{nur Sonnig, Attribut: Wind}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Schwach&3&1&2&0.918\\
+		Stark&2&1&1&1\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+Man sieht direkt, dass Attribut L auf den Trainingsdaten eine optimalen Informationsgewinn hat. Dies verifiziert man durch Berechnen der Informationsgehalte(ges=5)):
+\begin{table}[H]
+	\centering
+	\caption{Informationsgehalt, nur Sonnig}
+	\begin{tabular}{l|c}
+		\toprule
+		\textbf{Attribut} & \textbf{Information}  \\
+		\midrule
+		Temperatur&-0.4\\
+		Luftfeuchtigkeit & 0\\
+		Wind&-0.95\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+Unter dem Sonnig-Ast erzeugen wir also einen Knoten 'Luftfeuchtigkeit' mit 2 Blättern. Ast 'hoch' führt zu - und Ast 'normal' zu +.\\
+Nun müssen wir noch den Teilbaum finden, der an den Ast 'Regen' anhängt. Filtern wir also nach diesem Attribut und zählen dann wieder, so erhalten wir:
+\begin{table}[H]
+	\centering
+	\caption{Trainingsdatensatz, nur Regen}
+	\begin{tabular}{l|c|c|c|c|c}
+		\toprule
+		\textbf{Tag} & \textbf{Ausblick (A)} & \textbf{Temperatur (T)}  & \textbf{Luftfeuchtigkeit (L)} & \textbf{Wind (W)}     & \textbf{Spielt Baseball (B)} \\
+		\midrule
+		T4  & Regen     & Mild        & Hoch             & Schwach  & Ja              \\
+		T5  & Regen     & Kühl        & Normal           & Schwach  & Ja              \\
+		T6  & Regen     & Kühl        & Normal           & Stark    & Nein            \\
+		T10 & Regen     & Mild        & Normal           & Schwach  & Ja              \\
+		T14 & Regen     & Mild        & Hoch             & Stark    & Nein            \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[H]
+	\centering
+	\caption{nur Regen, Attribut: Temperatur}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Mild & 3&2&1&0.918   \\
+		Kühl & 2&1&1&1    \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[H]
+	\centering
+	\caption{nur Regen, Attribut: Luftfeuchtigkeit}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Hoch&2&1&1&1\\
+		Normal&3&2&1&0.918\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[H]
+	\centering
+	\caption{nur Regen, Attribut: Wind}
+	\begin{tabular}{l|c|c|c|c}
+		\toprule
+		\textbf{Ausprägung} & \textbf{Anzahl} & \textbf{davon +}  & \textbf{davon -} &\textbf{Entropy} \\
+		\midrule
+		Schwach&3&3&0&0\\
+		Stark&2&0&2&0\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+Wir sehen wieder direkt die perfekte Klassifizierung beim Attribut Wind(Informationswert=0). Die anderen beiden haben jeweils einen Informationswert von -0.951. Wir erstellen hier also einen Knoten 'Wind' mit 2 Blättern '+' für Ausprägung 'schwach' und '-' für Ausprägung 'stark'. Es ergibt sich insgesamt der folgende Entscheidungsbaum:
 \end{solution}
 
 \end{subtask}
