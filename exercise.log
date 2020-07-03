@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  30 JUN 2020 16:13
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  30 JUN 2020 16:21
  restricted system commands enabled.
 **exercise.tex
 (./exercise.tex
@@ -2262,17 +2262,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'table.11'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'table.12'
 ]
-<1a.jpg, id=63, 4625.28pt x 3468.96pt>
+<1a.jpg, id=64, 4625.28pt x 3468.96pt>
 File: 1a.jpg Graphic file (type jpg)
 <use 1a.jpg>
-Package luatex.def Info: 1a.jpg  used on input line 254.
-(luatex.def)             Requested size: 2312.63438pt x 1734.47578pt.
-
-Overfull \hbox (1800.48476pt too wide) in paragraph at lines 254--255
-[][] 
- []
-
-[6
+Package luatex.def Info: 1a.jpg  used on input line 263.
+(luatex.def)             Requested size: 256.07481pt x 192.0373pt.
+ [6
 warning  (pdf backend): ignoring duplicate destination with the name 'table.13'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'table.14'
@@ -2280,47 +2275,43 @@ warning  (pdf backend): ignoring duplicate destination with the name 'table.14'
 warning  (pdf backend): ignoring duplicate destination with the name 'table.15'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'table.16'
-]
-Overfull \vbox (1065.57802pt too high) has occurred while \output is active []
-
-
-[7<./1a.jpg>]) [8] (./exercises/02_dt_classification.tex
+]) [7<./1a.jpg>] (./exercises/02_dt_classification.tex
 LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 3.
-<media/images/example.png, id=90, 412.54124pt x 211.79124pt>
+<media/images/example.png, id=87, 412.54124pt x 211.79124pt>
 File: media/images/example.png Graphic file (type png)
 <use media/images/example.png>
 Package luatex.def Info: media/images/example.png  used on input line 7.
 (luatex.def)             Requested size: 230.46576pt x 118.3179pt.
-<media/images/signal.pdf, id=91, 590.80725pt x 446.26724pt>
+<media/images/signal.pdf, id=88, 590.80725pt x 446.26724pt>
 File: media/images/signal.pdf Graphic file (type pdf)
 <use media/images/signal.pdf>
 Package luatex.def Info: media/images/signal.pdf  used on input line 10.
 (luatex.def)             Requested size: 230.46576pt x 174.08437pt.
- [9
+ [8
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 <./media/images/example.png><./media/images/signal.pdf>])
-(./exercises/03_dt_regression.tex) (./exercises/04_random_forest.tex) [10]
-(./exercises/05_adaboost.tex) [11
+(./exercises/03_dt_regression.tex) (./exercises/04_random_forest.tex) [9]
+(./exercises/05_adaboost.tex) [10
 warning  (pdf backend): ignoring duplicate destination with the name 'table.17'
-] (./exercises/06_naive_bayes.tex Excluding 'comment' comment.) [12]
+] (./exercises/06_naive_bayes.tex Excluding 'comment' comment.) [11]
 (./exercises/07_kmeans.tex
-<media/images/kmeans.png, id=180, 582.175pt x 557.08125pt>
+<media/images/kmeans.png, id=177, 582.175pt x 557.08125pt>
 File: media/images/kmeans.png Graphic file (type png)
 <use media/images/kmeans.png>
 Package luatex.def Info: media/images/kmeans.png  used on input line 13.
 (luatex.def)             Requested size: 204.85672pt x 196.0269pt.
-) [13
+) [12
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
 <./media/images/kmeans.png>] (./exercises/08_regression.tex
-<media/images/data.pdf, id=191, 462.528pt x 346.896pt>
+<media/images/data.pdf, id=188, 462.528pt x 346.896pt>
 File: media/images/data.pdf Graphic file (type pdf)
 <use media/images/data.pdf>
 Package luatex.def Info: media/images/data.pdf  used on input line 17.
 (luatex.def)             Requested size: 256.07481pt x 192.06375pt.
-) [14
+) [13
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
-<./media/images/data.pdf>] [15]
+<./media/images/data.pdf>] [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./exercise.aux)
@@ -2332,7 +2323,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35685 strings out of 480885
+ 35684 strings out of 480885
  100000,1373583 words of node,token memory allocated
  3058 words of node memory still in use:
    62 hlist, 6 vlist, 33 rule, 17 disc, 7 local_par, 4 dir, 40 glue, 32 kern, 7 
@@ -2359,9 +2350,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb>
-Output written on exercise.pdf (15 pages, 5054017 bytes).
+Output written on exercise.pdf (14 pages, 5053099 bytes).
 
-PDF statistics: 394 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 131072)
+PDF statistics: 391 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 131072)
  216 words of extra memory for PDF output out of 10000 (max. 100000000)
 
