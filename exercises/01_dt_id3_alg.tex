@@ -270,7 +270,21 @@ Es ergab sich insgesamt der folgende Entscheidungsbaum:
 Geben Sie anhand ihres Entscheidungsbaumes eine Vorhersage für die Tage 15 bis 17 aus Tabelle~\ref{tab:data_baseball_predict}, ob Baseball gespielt wird.
 
 \begin{solution}
-% Geben sie hier ihre Antwort an.
+Wenn wir dem erlernten Entscheidungsbaum folgen, ergibt sich
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|c|c|c|c|c}
+		\toprule
+		\textbf{Tag} & \textbf{Ausblick (A)} & \textbf{Temperatur (T)}  & \textbf{Luftfeuchtigkeit (L)} & \textbf{Wind (W)}     & \textbf{Spielt Baseball (B)} \\
+		\midrule
+		T15 & Sonnig    & Mild        & Hoch     & Schwach & -       \\
+		T16 & Bewölkung & Mild        & Normal   & Schwach & +       \\
+		T17 & Regen     & Kühl        & Normal   & Stark   & -       \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\newline
+Wir spielen also nur an Tag 17.
 \end{solution}
 
 \end{subtask}

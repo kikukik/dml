@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  30 JUN 2020 16:21
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  5 JUL 2020 20:49
  restricted system commands enabled.
 **exercise.tex
 (./exercise.tex
@@ -2329,7 +2329,7 @@ Here is how much of LuaTeX's memory you used:
    62 hlist, 6 vlist, 33 rule, 17 disc, 7 local_par, 4 dir, 40 glue, 32 kern, 7 
 penalty, 99 glyph, 69 attribute, 86 glue_spec, 45 attribute_list, 2 write, 4 pdf
 _colorstack nodes
-   avail lists: 1:2,2:2077,3:176,4:71,5:486,6:86,7:3757,8:66,9:728,10:22,11:342
+   avail lists: 1:2,2:2077,3:176,4:71,5:486,6:86,7:3756,8:66,9:728,10:22,11:342
  51932 multiletter control sequences out of 65536+200000
  139 fonts using 20256307 bytes
  79i,21n,124p,10129b,849s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2350,7 +2350,7 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb>
-Output written on exercise.pdf (14 pages, 5053099 bytes).
+Output written on exercise.pdf (14 pages, 5053771 bytes).
 
 PDF statistics: 391 PDF objects out of 1000 (max. 8388607)
  80 named destinations out of 1000 (max. 131072)
