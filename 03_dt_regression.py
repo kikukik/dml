@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error
 
 
 def fit_dt_regressor(X_train: np.ndarray, y_train: np.ndarray, max_depth=None) -> tree.DecisionTreeRegressor:
-    clf=tree.DecisionTreeRegressor()
+    clf=tree.DecisionTreeRegressor(max_depth=max_depth)
     clf=clf.fit(X_train,y_train)
     return clf
 
@@ -22,6 +22,7 @@ def get_test_mse(clf, X_test: np.ndarray, y_test: np.ndarray) -> float:
 
 
 def export_tree_plot(clf, filename: str) -> None:
+    tree.plot_tree(clf)
     dot_data=tree.export_graphviz(clf,out_file=None)
     graph=graphviz.Source(dot_data)
     graph.render(filename)

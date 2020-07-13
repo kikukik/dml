@@ -11,7 +11,7 @@ from sklearn.metrics import confusion_matrix
 
 
 def fit_tree_stump_forest(X_train: np.ndarray, y_train: np.ndarray, n_estimators: int) -> RandomForestClassifier:
-    rfst=RandomForestClassifier()
+    rfst=RandomForestClassifier(n_estimators=n_estimators)
     rfst.fit(X_train,y_train)
     return rfst
 

@@ -12,13 +12,11 @@ from sklearn.metrics import accuracy_score
 def fit_dt_classifier(X_train: np.ndarray, y_train: np.ndarray) -> tree.DecisionTreeClassifier:
     clf=tree.DecisionTreeClassifier()
     clf=clf.fit(X_train,y_train)
-    tree.plot_tree(clf)
     return clf
 
 def get_test_accuracy(clf, X_test: np.ndarray, y_test: np.ndarray) -> float:
     missclassifications=0
     for idx,d in enumerate(X_test):
-  #      print(d)
         predict=clf.predict(d.reshape(1,-1))
         if predict!=y_test[idx]:
             missclassifications=missclassifications+1    
@@ -27,6 +25,7 @@ def get_test_accuracy(clf, X_test: np.ndarray, y_test: np.ndarray) -> float:
 
 
 def export_tree_plot(clf, filename: str):
+    tree.plot_tree(clf)
     dot_data=tree.export_graphviz(clf,out_file=None)
     graph=graphviz.Source(dot_data)
     graph.render(filename)
