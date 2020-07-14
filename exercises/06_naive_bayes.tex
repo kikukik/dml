@@ -49,7 +49,7 @@ p(N|Merkmal) &= \frac{p(Merkmal|N)\cdot p(N)}{p(Merkmal)} \\
 Bestimmen Sie angesichts der oben genannten Trainingsdaten alle Wahrscheinlichkeiten, die erforderlich sind, um den Na\"ive Bayes Klassifikator für beliebige Vorhersagen, ob Baseball gespielt wird, anzuwenden.
 
 \begin{solution}
-Wir kürzen die Begriffe wie folgt ab: Sonnig - S, Regen - R, Bewölkung - B; Warm - W, Mild - M, Kühl - K; Hoch - H, No - N; Sch - Schwach, St - Stark. Durch einfaches Auszählen ergibt sich p(B = Ja) = 9/14, p(B = Nein) = 5/14 sowie
+Wir kürzen die Begriffe wie folgt ab: Sonnig - S, Regen - R, Bewölkung - B; Warm - W, Mild - M, Kühl - K; Hoch - H, Normal - No; Schwach - Sch, Stark - St. Durch einfaches Auszählen ergibt sich p(B = Ja) = 9/14, p(B = Nein) = 5/14 sowie
 \begin{tabular}{l|l|l|l}
 	Ausblick & Temperatur & Luftfeuchtigkeit & Wind \\ \hline
 p(A = S) = 5/14 & p(T = W) = 4/14 & p(L = H) = 7/14 & p(W = Sch) = 8/14 \\
