@@ -28,7 +28,7 @@ Wir färben die Cluster ein. Das erste Cluster mit Mittelpunkt $x_2$ ist grün, 
 	blau: & $\sqrt{5}$ & $\sqrt{8}$ & $\sqrt{34}$ & $\sqrt{2}$ & $5$ & $\sqrt{13}$ & $5$ & $0$
 \end{tabular}
 \end{center} 
-Dabei ist der kl-te Eintrag gegeben durch $||z_k^{(0)}-x_l||$. Durch spaltenweises Vergleichen erhalten wir, dass $x_2$ und $x_3$ grün werden. $x_1, x_5,x_6$ und $x_8$ werden blau und $x_4$ wird lila. Bei $x_7$ haben wir ein Unentschieden zwischen blau und lila. Wir entscheiden uns für blau, da die beiden Nachbarn von $x_7$ - $x_5$ und $x_6$ - auch blau sind. Würden wir $x_7$ lila zuordnen, so würden wir die Varianz von lila stark erhöhen, da diese sonst 0 ist. Da der k-means Algorithmus aber die Varianz innerhalb der Cluster minimieren soll, ist blau sicher keine falsche Wahl für $x_7$. \\ Nach dem ersten Iterationsschritt erhalten wir also \begin{align*}
+Dabei ist der kl-te Eintrag gegeben durch $||z_k^{(0)}-x_l||$. Durch spaltenweises Vergleichen erhalten wir, dass $x_2$ und $x_3$ grün werden. $x_1, x_5,x_6$ und $x_8$ werden blau und $x_4$ wird lila. Bei $x_7$ haben wir ein Unentschieden zwischen blau und lila. Wir entscheiden uns für blau, da die beiden Nachbarn von $x_7$ ($x_5$ und $x_6$) auch blau sind. Würden wir $x_7$ lila zuordnen, so würden wir die Varianz von lila stark erhöhen, da diese sonst 0 ist. Da der k-means Algorithmus aber die Varianz innerhalb der Cluster minimieren soll, ist blau sicher keine falsche Wahl für $x_7$. \\ Nach dem ersten Iterationsschritt erhalten wir also \begin{align*}
 \text{grün}_1 &= \{x_2, x_3\} \text{ mit } z_1^{(1)} = (1,5; 3,5)^T \\
 \text{lila}_1 &= \{x_4\} \text{ mit } z_2^{(1)} = x_4 = (5;8)^T \\
 \text{blau}_1 &= \{x_1, x_5, x_6, x_7, x_8\} \text{ mit } z_3^{(1)} = (5,4;5,2)^T.
