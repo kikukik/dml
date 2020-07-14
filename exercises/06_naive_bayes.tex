@@ -31,7 +31,16 @@ D14 & Rain     & Mild        & High     & Strong & No        \\ \hline
 Zeigen Sie die Formel für $P(B=Ja \mid Merkmal)$ und  $P(B=Nein \mid Merkmal) $ für den gegebenen Datensatz.
 
 \begin{solution}
-% Geben sie hier ihre Antwort an.
+Sei Merkmal = (Ausblick, Temperatur, Luftfeuchtigkeit, Wind) ein 4-Tupel aus Untermerkmalen. Dabei kürzen wir Ausblick mit A, Temperatur mit T, Luftfeuchtigkeit mit T und Wind mit W ab. Zur besseren Lesbarkeit sei weiterhin N := 'B = Nein', J := 'B = Ja'. Nach der Unabhängigkeitsannahme des Naive Bayes-Ansatzes gilt \begin{align*}
+p(Merkmal|J) &= p(A|J)\cdot p(T|J)\cdot p(L|J)\cdot p(W|J) \text{ und } \\
+p(Merkmal|N) &= p(A|N)\cdot p(T|N)\cdot p(L|N)\cdot p(W|N).
+\end{align*} Damit können wir rechnen \begin{align*}
+p(J|Merkmal) &= \frac{p(Merkmal|J)\cdot p(J)}{p(Merkmal)} \\
+&= \frac{p(Merkmal|J)\cdot p(J)}{p(Merkmal|J)\cdot p(J) + p(Merkmal|N)\cdot p(N) } \\ &= \frac{ p(A|J)\cdot p(T|J)\cdot p(L|J)\cdot p(W|J)\cdot p(J)}{p(A|J)\cdot p(T|J)\cdot p(L|J)\cdot p(W|J)\cdot p(J) +  p(A|N)\cdot p(T|N)\cdot p(L|N)\cdot p(W|N)\cdot p(N) }.
+\end{align*} Die erste Gleichheit ist der Satz von Bayes, die zweite die Formel der totalen Wahrscheinlichkeit und die dritte die Unabhängigkeitsannahme von oben. Völlig analog gilt \begin{align*}
+p(N|Merkmal) &= \frac{p(Merkmal|N)\cdot p(N)}{p(Merkmal)} \\
+&= \frac{p(Merkmal|N)\cdot p(N)}{p(Merkmal|J)\cdot p(J) + p(Merkmal|N)\cdot p(N) } \\ &= \frac{ p(A|N)\cdot p(T|N)\cdot p(L|N)\cdot p(W|N)\cdot p(N)}{p(A|J)\cdot p(T|J)\cdot p(L|J)\cdot p(W|J)\cdot p(J) +  p(A|N)\cdot p(T|N)\cdot p(L|N)\cdot p(W|N)\cdot p(N) }.
+\end{align*}
 \end{solution}
 
 \end{subtask}
@@ -40,7 +49,19 @@ Zeigen Sie die Formel für $P(B=Ja \mid Merkmal)$ und  $P(B=Nein \mid Merkmal) $
 Bestimmen Sie angesichts der oben genannten Trainingsdaten alle Wahrscheinlichkeiten, die erforderlich sind, um den Na\"ive Bayes Klassifikator für beliebige Vorhersagen, ob Baseball gespielt wird, anzuwenden.
 
 \begin{solution}
-% Geben sie hier ihre Antwort an.
+Wir kürzen die Begriffe wie folgt ab: Sonnig - S, Regen - R, Bewölkung - B; Warm - W, Mild - M, Kühl - K; Hoch - H, No - N; Sch - Schwach, St - Stark. Durch einfaches Auszählen ergibt sich p(B = Ja) = 9/14, p(B = Nein) = 5/14 sowie
+\begin{tabular}{l|l|l|l}
+	Ausblick & Temperatur & Luftfeuchtigkeit & Wind \\ \hline
+p(A = S) = 5/14 & p(T = W) = 4/14 & p(L = H) = 7/14 & p(W = Sch) = 8/14 \\
+p(A = R) = 5/14 & p(T = M) = 6/14 & p(L = No) = 7/14 & p(W = St) = 6/14 \\
+p(A = B) = 4/14 & p(T = K) = 4/14 &                 &                    \\ 
+p(A = S|Ja) = 2/9 & p(T = W|Ja) = 2/9 & p(L = H|Ja) = 3/9 & p(W = Sch|Ja) = 6/9 \\
+p(A = B|Ja) = 4/9 & p(T = M|Ja) = 4/9 & p(L = No|Ja) = 6/9 & p(W = St| Ja) = 3/9 \\
+p(A = R|Ja) = 3/9 & p(T = K|Ja) = 3/9 &                   &                     \\ 
+p(A = S|Nein) = 3/5 & p(T = W|Nein) = 2/5 & p(L = H|Nein) = 4/5 & p(W = Sch|Nein) = 2/5 \\
+p(A = B|Nein) = 0/5 & p(T = M|Nein) = 2/5 & p(L = No|Nein) = 1/5 & p(W = St|Nein) = 3/5  \\
+p(A = R|Nein) = 2/5 & p(T = K|Nein) = 1/5 &                     &                       
+\end{tabular} 
 \end{solution}
 
 \end{subtask}
@@ -50,7 +71,15 @@ Treffen Sie Vorhersagen nach Na\"ive Bayes für die Tage 15 bis 17 aus Tabelle~\
 Geben Sie dabei den Rechenweg an.
 
 \begin{solution}
-% Geben sie hier ihre Antwort an.
+Wir setzen die Zahlen aus b) in die Formel von a) ein und erhalten für Tag 15\begin{align*}
+ p(B = Ja| S, M, H, Sch) &= \frac{p(S|Ja)p(M|Ja)p(H|Ja)p(Sch|Ja)p(Ja)}{p(S|Ja)p(M|Ja)p(H|Ja)p(Sch|Ja)p(Ja) + p(S|N)p(M|N)p(H|N)p(Sch|N)p(N)} \\
+&= \frac{2/9\cdot4/9\cdot3/9\cdot6/9\cdot9/14}{2/9\cdot4/9\cdot3/9\cdot6/9\cdot9/14 + 3/5\cdot2/5\cdot4/5\cdot2/5\cdot5/14} = \frac{8/567}{8/567 + 24/875} = 0,33967.
+\end{align*} Es folgt $p(B = Nein| S, M, H, Sch) = 1- p(B = Ja| S, M, H, Sch) = 0.66 > 0.5$, sodass an Tag 15 kein Baseball gespielt wird. Tag 16: \begin{align*}
+p(B = Ja| B, M, No, Sch) &= \frac{p(B|Ja)p(M|Ja)p(No|Ja)p(Sch|Ja)p(Ja)}{p(B|Ja)p(M|Ja)p(No|Ja)p(Sch|Ja)p(Ja) + p(B|N)p(M|N)p(No|N)p(Sch|N)p(N)} \\ &= \frac{4/9\cdot4/9\cdot6/9\cdot6/9\cdot9/14}{4/9\cdot4/9\cdot6/9\cdot6/9\cdot9/14 + 0/5\cdot2/5\cdot1/5\cdot2/5\cdot5/14} = 1,
+\end{align*} also wird an Tag 16 Baseball gespielt. \\ Für Tag 17 ergibt sich \begin{align*}
+p(B = Ja| R, K, No, St) &= \frac{p(R|Ja)p(K|Ja)p(No|Ja)p(St|Ja)p(Ja)}{p(R|Ja)p(K|Ja)p(No|Ja)p(St|Ja)p(Ja) + p(R|N)p(K|N)p(No|N)p(St|N)p(N)} \\
+&= \frac{3/9\cdot3/9\cdot6/9\cdot3/9\cdot9/14}{3/9\cdot3/9\cdot6/9\cdot3/9\cdot9/14 + 2/5\cdot1/5\cdot1/5\cdot3/5\cdot5/14} = \frac{1/63}{1/63 + 3/875} = 0,822.
+\end{align*} Somit wird an Tag 17 Baseball gespielt. 
 \end{solution}
 
 \end{subtask}

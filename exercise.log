@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  13 JUL 2020 18:55
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7440 64-bit)  (format=lualatex 2020.6.29)  13 JUL 2020 20:28
  restricted system commands enabled.
 **exercise.tex
 (./exercise.tex
@@ -2304,27 +2304,42 @@ File: regression_tree_d3.pdf Graphic file (type pdf)
 Package luatex.def Info: regression_tree_d3.pdf  used on input line 19.
 (luatex.def)             Requested size: 512.14963pt x 237.40805pt.
 )
-(./exercises/04_random_forest.tex) [10<./regression_tree_d3.pdf>]
-(./exercises/05_adaboost.tex) [11
+(./exercises/04_random_forest.tex [10<./regression_tree_d3.pdf>]
+<ue4ergebnisse.png, id=168, 341.02406pt x 161.10187pt>
+File: ue4ergebnisse.png Graphic file (type png)
+<use ue4ergebnisse.png>
+Package luatex.def Info: ue4ergebnisse.png  used on input line 34.
+(luatex.def)             Requested size: 512.14963pt x 241.95702pt.
+) [11<./ue4ergebnisse.png>] (./exercises/05_adaboost.tex
+Overfull \hbox (18.58041pt too wide) in paragraph at lines 40--76
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12
 warning  (pdf backend): ignoring duplicate destination with the name 'table.17'
-] (./exercises/06_naive_bayes.tex Excluding 'comment' comment.) [12]
-(./exercises/07_kmeans.tex
-<media/images/kmeans.png, id=198, 582.175pt x 557.08125pt>
+] [13
+warning  (pdf backend): ignoring duplicate destination with the name 'table.18'
+]) [14] (./exercises/06_naive_bayes.tex Excluding 'comment' comment. [15])
+[16] (./exercises/07_kmeans.tex
+<media/images/kmeans.png, id=223, 582.175pt x 557.08125pt>
 File: media/images/kmeans.png Graphic file (type png)
 <use media/images/kmeans.png>
 Package luatex.def Info: media/images/kmeans.png  used on input line 13.
 (luatex.def)             Requested size: 204.85672pt x 196.0269pt.
-) [13
+ [17
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
-<./media/images/kmeans.png>] (./exercises/08_regression.tex
-<media/images/data.pdf, id=209, 462.528pt x 346.896pt>
+<./media/images/kmeans.png>]) [18] (./exercises/08_regression.tex
+<media/images/data.pdf, id=238, 462.528pt x 346.896pt>
 File: media/images/data.pdf Graphic file (type pdf)
 <use media/images/data.pdf>
 Package luatex.def Info: media/images/data.pdf  used on input line 17.
 (luatex.def)             Requested size: 256.07481pt x 192.06375pt.
-) [14
+ [19
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
-<./media/images/data.pdf>] [15]
+<./media/images/data.pdf>]) [20]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./exercise.aux)
@@ -2336,16 +2351,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35703 strings out of 480885
+ 35719 strings out of 480885
  100000,1373583 words of node,token memory allocated
- 3058 words of node memory still in use:
-   62 hlist, 6 vlist, 33 rule, 17 disc, 7 local_par, 4 dir, 40 glue, 32 kern, 7 
-penalty, 99 glyph, 69 attribute, 86 glue_spec, 45 attribute_list, 2 write, 4 pdf
+ 3069 words of node memory still in use:
+   62 hlist, 6 vlist, 33 rule, 17 disc, 7 local_par, 5 dir, 40 glue, 32 kern, 7 
+penalty, 99 glyph, 71 attribute, 86 glue_spec, 46 attribute_list, 2 write, 4 pdf
 _colorstack nodes
-   avail lists: 1:2,2:2077,3:139,4:71,5:486,6:64,7:3757,8:66,9:728,10:22,11:342
- 51942 multiletter control sequences out of 65536+200000
+   avail lists: 1:2,2:2774,3:154,4:71,5:557,6:66,7:5844,8:112,9:978,10:32,11:342
+
+ 51948 multiletter control sequences out of 65536+200000
  139 fonts using 20256307 bytes
- 79i,21n,124p,10129b,849s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 79i,21n,124p,10129b,850s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/no-pa/appdata/roaming/miktex/2.9/fonts/opentype/public/xcharter/xc
 harter-italic.otf><//?/c:/users/no-pa/appdata/roaming/miktex/2.9/fonts/opentype/
 google/roboto/roboto-regular.otf><//?/c:/users/no-pa/appdata/roaming/miktex/2.9/
@@ -2358,14 +2374,15 @@ pe/google/roboto/roboto-bold.otf><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on exercise.pdf (15 pages, 5102339 bytes).
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb>
+Output written on exercise.pdf (20 pages, 5158518 bytes).
 
-PDF statistics: 412 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 131072)
+PDF statistics: 443 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 131072)
  216 words of extra memory for PDF output out of 10000 (max. 100000000)
 

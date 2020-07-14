@@ -35,7 +35,89 @@ zur Berechnung von $\alpha_{i}$.
  Geben Sie dabei die \textbf{Fehler} (Summe der Gewichtungen der falsch klassifizierten Beispiele) für die möglichen Entscheidungsgrenzen von $1$ bis $10$ an, sowie die \textbf{Gewichtung} jedes Datenpunktes vor und nach Normalisierung an.
 
 \begin{solution}
-% Geben sie hier ihre Antwort an.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ll|rr|rrrrrr}
+		Kriterium & Entscheidung & erste & Iteration &  & zweite &  & Iteration & & \\
+		\hline
+		& & Fehler $x_1$ & Fehler $x_2$ & $x_1$ schlecht & $x_1$ gut& Fehler $x_1$ & $x_2$ schlecht & $x_2$ gut & Fehler $x_2$ \\
+		$x_i \leq 0$ & pro + & 0.5 & 0.5 & 3 &2 & 0.5821 & 3 &2 & 0.5821\\
+		$x_i \leq 0$ & pro - & 0.5 & 0.5 & 0 &5 & 0.4315 & 0 &5 & 0.4315\\
+		$x_i \leq 1$ & pro + & 0.4 & 0.6 & 3 &1 & 0.4958 & 3 &3 & 0.6684 \\
+		$x_i \leq 1$ & pro - & 0.6 & 0.4 & 0 &6 & 0.5178 & 0 &4 & 0.3452 \\
+		$x_i \leq 2$ & pro + & \fbox{0.3} & 0.5 & 3 &0 & 0.4095 & 3 &2 & 0.5821 \\
+		$x_i \leq 2$ & pro - & 0.7 & 0.5 & 0 &7 & 0.6041 & 0 &5 & 0.4315\\
+		
+		$x_i \leq 3$ & pro + & 0.4 & 0.6 & 3 &1 & 0.4958 & 3 &3 & 0.6684 \\
+		$x_i \leq 3$ & pro - & 0.6 & 0.4 & 0 &6 & 0.5178 & 0 &4 & 0.3452\\
+		
+		$x_i \leq 4$ & pro + & 0.5 & 0.7 & 3 &2 & 0.5821 & 3 &4 & 0.7547 \\
+		$x_i \leq 4$ & pro - & 0.5 & 0.3 & 0 &5 & 0.4315 & 0 &3 & 0.2589 \\
+		
+		$x_i \leq 5$ & pro + & 0.4 & 0.6 & 2 &2 & 0.4456 & 3 &3 & 0.6684 \\
+		$x_i \leq 5$ & pro - & 0.6 & 0.4 & 1 &5 & 0.568  & 0 &4 & 0.3452 \\
+		
+		$x_i \leq 6$ & pro + & 0.3 & 0.7 & 1 &2 & 0.3091 & 3 &4 & 0.7547 \\
+		$x_i \leq 6$ & pro - & 0.7 & 0.3 & 2 &5 & 0.7045 & 0 &3 & 0.2589 \\
+		
+		$x_i \leq 7$ & pro + & 0.4 & 0.6 & 1 &3 & 0.3954 & 2 &4 & 0.6182 \\
+		$x_i \leq 7$ & pro - & 0.6 & 0.4 & 2 &4 & 0.6182 & 1 &3 & 0.3954 \\
+		
+		$x_i \leq 8$ & pro + & 0.3 & 0.5 & 0 &3 & \fbox{0.2589} & 1 &4& 0.4817 \\
+		$x_i \leq 8$ & pro - & 0.7 & 0.5 & 3 &4 & 0.7547 & 2 &3 & 0.5319 \\
+		
+		$x_i \leq 9$ & pro + & 0.4 & 0.6 & 0 &4 &0.3452 & 1 &5& 0.568 \\
+		$x_i \leq 9$ & pro - & 0.6 & 0.4 & 3 &3 & 0.6684 & 2 &2 & 0.4456 \\
+		
+		$x_i \leq 10$ & pro + & 0.5 & 0.5 & 0 &5 & 0.4315 & 0 &5 & 0.4315 \\
+		$x_i \leq 10$ & pro - & 0.5 & 0.5 & 3 &2 & 0.5821 & 3 &2 & 0.5821 \\
+		
+	\end{tabular}
+	\caption{Die Ergebnisse für Aufgabe 1.5. Die Tabelle liest sich am Beispiel der Zeile 3 folgendermaßen: entscheiden wir uns bei $x_1 \leq 1$ für + dann machen wir 4 Fehler im ersten Schritt (also Fehlermaß 0.4) und 3 schlechte (d.h. höher gewichtete) Fehler bzw. einen guten (d.h. niedriger gewichteten) im zweiten Schritt. Daraus errechnet sich das Fehlermaß. Entscheiden wir uns bei $x_2 \leq 1$ für +, dann machen wir 6 Fehler im ersten Schritt und sowohl 3 schlechte als auch 3 gute im zweiten Schritt. Daraus ergibt sich dann das Fehlermaß.  }
+	\label{tab:H1.5-Ergebnis}
+\end{table}	
+Im ersten Schritt gilt für alle Gewichte $w_i = 0.1$, für $i = 1, \ldots, 10$. Also müssen wir nur zählen, wie viele falsch klassifiziert werden. Betrachte dazu Spalten 3 und 4 in Tabelle \ref{tab:H1.5-Ergebnis}. Da wir bei einem Unentschieden das erste Minimum beginnend mit $x_1$ wählen sollen, gilt \begin{align*}
+f_1 ((x_1, x_2)^T) = \left\{
+\begin{array}{ll}
++1 & x_1 \leq 2 \\
+-1 & \, \textrm{sonst} \\
+\end{array}
+\right. 
+\end{align*} als Stumpf für die erste Iteration. Damit gilt nach Zeile 5 der Tabelle \ref{tab:H1.5-Ergebnis} $err_1 = 0.3$. Weiter ist \begin{align*}
+\alpha_1 = \frac{1}{2}ln(\frac{1-err_1}{err_1}) = 0.4236.
+\end{align*} Behalten wir die Nummerierung in der Aufgabenstellung bei (beginnend bei 1), dann klassifizieren wir die Punkte 3, 4 und 5 falsch. Dementsprechend erhalten wir für die neuen (noch nicht normalisierten) Gewichte \begin{align*}
+w_i' &= 0.1 \text{ für } i = 1,2,6,7,8,9,10 \\
+w_i' &= 0.1e^{\alpha_1} = 0.1527 \text{ für } i = 3,4,5.
+\end{align*} Normalisieren (d.h. teilen durch 7 * 0.1 + 0.1527 * 3= 1.1581) ergibt \begin{align*}
+w_i^{(1)} &= 0.0863 \text{ für } i = 1,2,6,7,8,9,10 \\
+w_i^{(1)} &= 0.1365 \text{ für } i = 3,4,5.
+\end{align*} Für den zweiten Iterationsschritt müssen wir darauf achten, dass die Datenpunkte 3, 4 und 5 stärker gewichtet sind, wir also eine erneute Fehlklassifikation vermeiden sollten. Der zu minimierende Fehler ist \begin{align*}
+0.0863(\epsilon_1 + \epsilon_2 +\epsilon_3 +\epsilon_4 +\epsilon_8 +\epsilon_9 +\epsilon_{10} ) + 0.1365(\epsilon_5 +\epsilon_6 +\epsilon_7)
+\end{align*}wobei \begin{align*}
+\epsilon_i = \left\{\begin{array}{ll}
+1 & \text{Datenpunkt i wurde falsch klassifiziert} \\
+0 & \text{Datenpunkt i wurde korrekt klassifiziert} \\
+\end{array} 
+\right.
+\end{align*} gilt. Aus Spalte 7 in Tabelle \ref{tab:H1.5-Ergebnis} ersehen wir, dass der neue Rumpf \begin{align*}
+f_2 ((x_1, x_2)^T) = \left\{
+\begin{array}{ll}
++1 & x_1 \leq 8 \\
+-1 & \, \textrm{sonst} \\
+\end{array}
+\right. 
+\end{align*} ist. Es gilt $err_2 = 3 * 0.0863 = 0.2589$ und wir klassifizieren die Datenpunkte 6, 7 und 8 falsch. Es folgt \begin{align*}
+\alpha_2 = \frac{1}{2}ln(\frac{1-err_2}{err_2}) = 0.5258.
+\end{align*} Wir müssen die Datenpunkte 6, 7 und 8 neu gewichten, also \begin{align*}
+w_i' &= 0.1 * e^{0.5258} = 0.1692 \text{ für } i = 6,7,8 \\
+w_i' &= 0.0863 \text{ für } i = 1,2,9,10 \\
+w_i' &= 0.1365 \text{ für } i = 3,4,5.
+\end{align*} mit. Nach Normalisierung (d.h. teilen durch 3 * 0.1365 + 3 * 0.1692 + 4 * 0.0863 = 1.2623) folgt \begin{align*}
+w_i^{(2)} &= 0.1081 \text{ für } i = 3,4,5 \\
+w_i^{(2)} &= 0.1340 \text{ für } i = 6,7,8 \\
+w_i^{(2)} &= 0.0684 \text{ für } i = 1,2,9,10 
+\end{align*}
+
 \end{solution}
 
 \end{subtask}
@@ -44,7 +126,22 @@ zur Berechnung von $\alpha_{i}$.
  Geben Sie das Gesamtmodell $f(x)$ nach zwei Iterationen an.
  
 \begin{solution}
-% Geben sie hier ihre Antwort an.
+Mit der Notation aus Teilaufgabe a) folgt mit $x = (x_1, x_2)^T \in \mathbb{R}^2$ \begin{align*}
+\tilde{f}(x) = \alpha_1f_1(x) + \alpha_2f_2(x) = \left\{
+\begin{array}{ll}
+0.9494 & x_1 \leq 2 \\
+0.1022 & 2 < x_1 \leq 8 \\
+-0.9494 & x_1 > 8 
+\end{array}
+\right. 
+\end{align*} Für das Gesamtmodell nach zwei Iterationen ergibt sich also \begin{align*}
+f(x) = sign(\tilde{f}(x)) = \left\{
+\begin{array}{ll}
+1 &  x_1 \leq 8 \\
+-1 & x_1 > 8 
+\end{array}
+\right. 
+\end{align*}
 \end{solution}
 
 \end{subtask}
